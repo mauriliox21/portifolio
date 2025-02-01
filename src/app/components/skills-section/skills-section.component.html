@@ -1,0 +1,23 @@
+<section id="skillsSection" class="container-fluid section">
+    <div class="row">
+        <h2 class="text-center fw-bold">Minha Experiência</h2>
+        <div class="col-12 col-md-8 offset-md-2">
+            <p class="fw-light">Atuo profissionalmente na área do desenvolvimento web a mais de 5 anos, durante todo este tempo tive
+                oportunidade de trabalhar com diversas tecnologias, frameworks e ferramentas. Sempre me esforcei para
+                realizar com eficácia e agilidade tudo o que me foi proposto, além de ser apaixonado por aprender coisas
+                novas, o que me possibilitou colecionar experiências diversas. A seguir listo algumas das que tenho mais
+                afinidade e que uso com mais frequência.</p>
+            <div class="row gy-5">
+                @for (tech of techs; track $index) {
+                <div class="col-6 col-md-3">
+                    <div class="card-expirience" data-bs-toggle="modal" data-bs-target="#modalSkill" (click)="setTech(tech)">
+                        <img class="img-thumbnail expirience-img" [src]="tech.icon" [alt]="tech.name"
+                            [title]="tech.name">
+                        <h5 class="">{{tech.name | uppercase}}</h5>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

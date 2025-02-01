@@ -1,0 +1,49 @@
+:host{
+    #modalSkill .modal-content{
+        background-color: var(--bg-secondary);
+
+        & .btn-close{
+            color: var(--ftc-primary);
+            filter: invert(100%);
+        }
+
+        & .modal-header img {
+            filter: invert(100%);
+            aspect-ratio: 1 / 1;
+            height: 30px;
+            margin: 0px 10px 5px 5px;
+        }
+
+        & .project{
+            padding: 5px 10px;
+            border: 2px solid var(--bg-primary);
+            transition: 0.4s;
+
+            &.odd{
+                background-color: var(--bg-primary);
+            }
+
+            &:hover{
+                background-color: #38383b;
+                border-color: #38383b;
+            }
+
+            & p{
+                margin: 5px auto;
+
+                &.link{
+                    white-space: nowrap;
+                    overflow-x: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                & a{
+                    color: var(--ftc-secondary);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        
+    }
+}

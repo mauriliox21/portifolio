@@ -1,0 +1,39 @@
+:host{
+    #skillsSection{
+        background-color: var(--bg-secondary);
+
+        & h2{
+            margin: 2.3rem auto 2.4rem;
+        }
+
+        & p{
+            margin: 0 auto 40px;
+        }
+
+        & .card-expirience{
+            padding: 1.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg-primary);
+            border-radius: 5px;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #4e4e5f;
+                box-shadow: 0px 0px 10px 5px #414141;
+                transition: 0.5s;
+            }
+        }
+
+        & .expirience-img{
+            filter: invert(100%);
+            background: transparent;
+            border: none;
+            width: 50%;
+            margin-bottom: 15px;
+        }
+    }
+}

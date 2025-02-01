@@ -1,0 +1,14 @@
+:host{
+    .menu{
+        background-color: transparent;
+        
+        & span{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .active{
+            border-bottom: 2px solid #000;
+        }
+    }
+}

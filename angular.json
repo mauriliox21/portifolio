@@ -32,9 +32,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -91,9 +92,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/bootstrap.min.js"]
           }
         }
       }

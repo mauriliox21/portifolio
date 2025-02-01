@@ -1,0 +1,54 @@
+:host{
+    #contactSection{
+        background-color: var(--bg-secondary);
+        padding-bottom: 6rem;
+
+        & h5{
+            margin: 2.4rem auto 10px;
+        }
+
+        & h2{
+            margin: 0 auto;
+        }
+
+        & p{
+            margin: 15px auto 40px;
+        }
+
+        & .contacts{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+            & .c-contact{
+                background-color: var(--bg-primary);
+                padding: 1rem;
+                text-decoration: none;
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+
+                &:last-child{
+                    margin-left: 50%;
+                }
+
+                & span:last-child{
+                    color: var(--ftc-secondary);
+                }
+            }
+        }        
+    }
+
+    @media(max-width: 700px) {
+        #contactSection .contacts{
+            grid-template-columns: 1fr;
+
+            & .c-contact{
+
+                &:last-child{
+                    margin-left: unset;
+                }
+            }
+        }
+    }
+}
