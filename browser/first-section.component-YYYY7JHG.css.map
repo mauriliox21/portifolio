@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/first-section/first-section.component.scss"],
+  "sourcesContent": [":host{\r\n    #firstSection{\r\n        height: 95dvh;\r\n        background-size: cover;\r\n        background-image: linear-gradient(180deg, #2e2e35cf, var(--bg-primary)), url(\"/backgroung.jpg\");\r\n        \r\n        & button{\r\n            margin-top: 15px;\r\n        }\r\n    }\r\n\r\n    #hello{\r\n        font-size: 3rem;\r\n        margin: 0;\r\n        width: 20rem;\r\n        font-weight: bold;\r\n    }\r\n\r\n    .social-media{\r\n        padding: 0;\r\n        margin-top: 15px;\r\n\r\n        & a{\r\n            margin-left: 5px;\r\n            margin-right: 5px;\r\n            color: var(--ftc-primary);\r\n            text-transform: uppercase;\r\n            text-decoration: none;\r\n        }\r\n    }\r\n\r\n    #myPosition{\r\n        text-transform: uppercase;\r\n        font-weight: bold;\r\n    }\r\n}\r\n"],
+  "mappings": "AACI,MAAA,CAAA,aACI,OAAA,MACA,gBAAA,MACA,iBAAA,gBAAA,MAAA,CAAA,KAAA,EAAA,CAAA,EAAA,CAAA,EAAA,CAAA,YAAA,CAAA,IAAA,cAAA,CAAA,qBAEA,MAAA,CALJ,aAKI,OACI,WAAA,KAIR,MAAA,CAAA,MACI,UAAA,KAXJ,OAYI,EACA,MAAA,MACA,YAAA,IAGJ,MAAA,CAAA,aAjBA,QAkBI,EACA,WAAA,KAEA,MAAA,CAJJ,aAII,EACI,YAAA,IACA,aAAA,IACA,MAAA,IAAA,eACA,eAAA,UACA,gBAAA,KAIR,MAAA,CAAA,WACI,eAAA,UACA,YAAA",
+  "names": []
+}

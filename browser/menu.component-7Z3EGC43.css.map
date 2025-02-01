@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/menu/menu.component.scss"],
+  "sourcesContent": [":host{\r\n    .menu{\r\n        background-color: transparent;\r\n        \r\n        & span{\r\n            font-size: 20px;\r\n            font-weight: lighter;\r\n        }\r\n\r\n        .active{\r\n            border-bottom: 2px solid #000;\r\n        }\r\n    }\r\n}"],
+  "mappings": "AACI,MAAA,CAAA,KACI,iBAAA,YAEA,MAAA,CAHJ,KAGI,KACI,UAAA,KACA,YAAA,QAGJ,MAAA,CARJ,KAQI,CAAA,OACI,cAAA,IAAA,MAAA",
+  "names": []
+}
