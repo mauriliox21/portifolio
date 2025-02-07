@@ -1,21 +1,51 @@
-
 <div [id]="slideId" class="slider">
-        <!-- <img src="/mobile.jpg" class="img-fluid img-project" alt="Cryptoalert"> -->
-        <span (click)="next()" href="#" class="control_next">>></span>
-        <span (click)="prev()" href="#" class="control_prev"><</span>
-        <ul>
-            @for(image of images; track image; let index = $index){
-                @if(index !== 0){
-                    <li><img (load)="setDefault()" [src]="image" class="img-fluid img-project" alt="Cryptoalert"></li>
-                }
-                @else {
-                    <li><img [src]="image" class="img-fluid img-project" alt="Cryptoalert"></li>
-                }
-            }
-            <!-- <li data-slide="1"><img (load)="setDefault()" src="/ca1.jpg" class="img-fluid img-project" alt="Cryptoalert"></li>
-            <li data-slide="2"><img src="/ca2.jpg" class="img-fluid img-project" alt="Cryptoalert"></li>
-            <li data-slide="3"><img src="/ca3.jpg" class="img-fluid img-project" alt="Cryptoalert"></li>
-            <li data-slide="4"><img src="/ca4.jpg" class="img-fluid img-project" alt="Cryptoalert"></li>
-            <li data-slide="5"><img src="/ca5.jpg" class="img-fluid img-project" alt="Cryptoalert"></li> -->
-        </ul>
-    </div>
+    <!-- <img src="/mobile.jpg" class="img-fluid img-project" alt="Cryptoalert"> -->
+    <span (click)="next()" href="#" class="control_next">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                    }
+                </style>
+            </defs>
+            <g id="chevron-right">
+                <line class="cls-1" x1="21" x2="12" y1="16" y2="25" />
+                <line class="cls-1" x1="12" x2="21" y1="7" y2="16" />
+            </g>
+        </svg>
+    </span>
+    <span (click)="prev()" href="#" class="control_prev">
+        <svg style="transform: rotate(180deg);" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2px;
+                    }
+                </style>
+            </defs>
+            <g id="chevron-right">
+                <line class="cls-1" x1="21" x2="12" y1="16" y2="25" />
+                <line class="cls-1" x1="12" x2="21" y1="7" y2="16" />
+            </g>
+        </svg>
+    </span>
+    <ul>
+        @for(image of images; track image; let index = $index){
+        @if(index === 0){
+        <li><img (load)="setDefault()" [src]="image" class="img-fluid img-project" alt="Cryptoalert"></li>
+        }
+        @else {
+        <li><img [src]="image" class="img-fluid img-project" alt="Cryptoalert"></li>
+        }
+        }
+    </ul>
+</div>

@@ -40,8 +40,8 @@ export class SlideComponent {
       if(lastSlide){
         document.querySelector('#'+this.slideId+' ul')?.prepend(lastSlide);
       }
-    }, 500)
-
+      setInterval(() => this.move(this.viewLeft() * 2), 5000)
+    }, 500);
   }
 
   next(){
@@ -65,8 +65,7 @@ export class SlideComponent {
   }
 
   private move(moviment: number){
-    console.log((this.slideW() * -1));
-    
+    console.log("move: " + moviment)
     document.querySelector('#'+this.slideId+' ul')?.classList.add("transicao");
     document.querySelector('#'+this.slideId+' ul')?.setAttribute("style",`width: ${this.sliderW()}px;left:${moviment}px;`);
     setTimeout(() => {

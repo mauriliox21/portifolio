@@ -14,7 +14,7 @@ export class SkillsSectionComponent {
   public techs: Tech[] = [
     {
       name: 'java',
-      icon: '/expirience/java.png',
+      icon: 'assets/expirience/java.png',
       expirience: {
         type: 'PROFESSIONAL',
         time: '2 anos',
@@ -36,7 +36,7 @@ export class SkillsSectionComponent {
     },
     {
       name: 'spring boot',
-      icon: '/expirience/spring_boot.png',
+      icon: 'assets/expirience/spring_boot.png',
       expirience: {
         type: 'PROFESSIONAL',
         time: '2 anos',
@@ -58,7 +58,7 @@ export class SkillsSectionComponent {
     },
     {
       name: 'Angular',
-      icon: '/expirience/angular.png',
+      icon: 'assets/expirience/angular.png',
       expirience: {
         type: 'PROFESSIONAL',
         time: '1 ano',
@@ -72,7 +72,7 @@ export class SkillsSectionComponent {
     },
     {
       name: 'React Native',
-      icon: '/expirience/react_native.png',
+      icon: 'assets/expirience/react_native.png',
       expirience: {
         type: 'ACADEMIC',
         time: '3 anos',
@@ -90,7 +90,7 @@ export class SkillsSectionComponent {
     },
     {
       name: 'C#',
-      icon: '/expirience/csharp.png',
+      icon: 'assets/expirience/csharp.png',
       expirience: {
         type: 'PROFESSIONAL',
         time: '3 anos e 6 meses',
@@ -99,7 +99,7 @@ export class SkillsSectionComponent {
     },
     {
       name: 'Git',
-      icon: '/expirience/git.png',
+      icon: 'assets/expirience/git.png',
       expirience: {
         type: 'PROFESSIONAL',
         time: 'mais de 5 anos',
@@ -108,7 +108,7 @@ export class SkillsSectionComponent {
     },
     {
       name: 'HTML5',
-      icon: '/expirience/html5.png',
+      icon: 'assets/expirience/html5.png',
       expirience: {
         type: 'PROFESSIONAL',
         time: 'mais de 5 anos',
@@ -117,7 +117,7 @@ export class SkillsSectionComponent {
     },
     {
       name: 'CSS3',
-      icon: '/expirience/css3.png',
+      icon: 'assets/expirience/css3.png',
       expirience: {
         type: 'PROFESSIONAL',
         time: 'mais de 5 anos',

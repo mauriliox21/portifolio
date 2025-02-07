@@ -11,4 +11,10 @@
             border-bottom: 2px solid #000;
         }
     }
+    
+    @media (max-width: 576px) {
+        .menu .active{
+            border-bottom: none;
+        }
+    }
 }
